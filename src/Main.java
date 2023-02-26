@@ -23,7 +23,7 @@ public class Main {
     public static <T> void main(String[] args) {
         VendingMachine<Product> machineOne = new VendingMachine<>("Product machine 1");
         DrinkVendingMachine<Drink> machineTwo = new DrinkVendingMachine<>("Drink machine 1");
-        HotDrinkVendingMachine<HotDrink> machinethree = new HotDrinkVendingMachine<>("Hot Drink machine 1");
+        HotDrinkVendingMachine<HotDrink> machineThree = new HotDrinkVendingMachine<>("Hot Drink machine 1");
         Product first = new Product("орешки", 100);
         Drink second = new Drink("газировка", 150, 500);
         HotDrink third = new HotDrink("Зеленый чай", 150, 500, 500);
@@ -32,13 +32,13 @@ public class Main {
 
         machineOne.add(first);
         machineTwo.add(second);
-        machinethree.add(third);
-        machinethree.add(fourth);
-        machinethree.add(fifth);
+        machineThree.add(third);
+        machineThree.add(fourth);
+        machineThree.add(fifth);
 
         System.out.println(machineOne.getProduct("орешки"));
         System.out.println(machineTwo.getProduct("газировка"));
-        System.out.println(machinethree.getProduct("Зеленый чай", 500, 50));
+        System.out.println(machineThree.getProduct("Зеленый чай", 500, 50));
 
     }
 }
